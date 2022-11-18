@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristian Pablo - Proyecto Final 2 - JavaScript</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+</head>
+<body>
+    <div id="page" class="site page-home">
+
+        <aside class="site-off desktop-hide">
+            <div class="off-canvas">
+                <div class="canvas-head flexitem">
+                    <div class="logo"><a href="/"><span class="circle"></span>.Jhossy</a></div>
+                    <a href="#" class="t-close flexcenter"><i class="ri-close-line"></i></a>  
+                </div>
+                <div class="departments"></div>
+                <nav></nav>
+                <div class="thetop-nav"></div>
+            </div>
+        </aside>
+
+        <header>
+            <div class="header-top mobile-hide">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="left">
+                            <ul class="flexitem main-links">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Productos Destacados</a></li>
+                                <li><a href="#">Lista de deseos</a></li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <ul class="flexitem main-links">
+                                    <li><a href="#">Sign Up</a></li>
+                                    <li><a href="#">Mi cuenta</a></li>
+                                    <li><a href="#">Rastreo de orden</a></li>
+                                    <li><a href="#">SOL <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
+                                        <ul>
+                                            <li class="current"><a href="#">SOL</a></li>
+                                            <li><a href="#">USD</a></li>
+                                            <li><a href="#">EURO</a></li>
+                                            <li><a href="#">GBP</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Español <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
+                                        <ul>
+                                            <li class="current"><a href="#">Español</a></li>
+                                            <li><a href="#">Ingles</a></li>
+                                            <li><a href="#">German</a></li>
+                                            <li><a href="#">Portugues</a></li>
+                                        </ul>
+                                    </li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- cabecera superior -->
+            <div class="header-nav">
+                <div class="contanier">
+                    <div class="wrapper flexitem">
+                        <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
+                        <div class="left flexitem">
+                            <div class="logo"><a href="/"><span class="circle"></span>.Jhossy</a></div>
+                            <nav class="mobile-hide">
+                                <ul class="flexitem second-links">
+                                    <li><a href="index.html">Inicio</a></li>
+                                    <li><a href="page-category.html">Tienda</a></li>
+                                    <li class="has-child">
+                                        <a href="#">Mujer
+                                            <div class="icon-small"><i class="ri-arrow-down-s-line"></i></div>
+                                        </a>
+                                        <div class="mega">
+                                            <div class="container">
+                                                <div class="wrapper">
+                                                    <div class="flexcol">
+                                                        <div class="row">
+                                                            <h4>Ropa de Mujer</h4>
+                                                            <ul>
+                                                                <li><a href="#">Vestidos</a></li>
+                                                                <li><a href="#">Camisetas y Tops</a></li>
+                                                                <li><a href="#">Chaquetas y Abrigos</a></li>
+                                                                <li><a href="#">Pantalones y Capri</a></li>
+                                                                <li><a href="#">Suéteres</a></li>
+                                                                <li><a href="#">Disfraces</a></li>
+                                                                <li><a href="#">Sudadera</a></li>
+                                                                <li><a href="#">Pijamas y Batas</a></li>
+                                                                <li><a href="#">Shorts</a></li>
+                                                                <li><a href="#">Trajes de Baño</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flexcol">
+                                                        <div class="row">
+                                                            <h4>Joyas</h4>
+                                                            <ul>
+                                                                <li><a href="#">Accesorios</a></li>
+                                                                <li><a href="#">Bolsos y Monederos</a></li>
+                                                                <li><a href="#">Collares</a></li>
+                                                                <li><a href="#">Anillos</a></li>
+                                                                <li><a href="#">Aretes</a></li>
+                                                                <li><a href="#">Brazaletes</a></li>
+                                                                <li><a href="#">Joyas para el cuerpo</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flexcol">
+                                                        <div class="row">
+                                                            <h4>Belleza</h4>
+                                                            <ul>
+                                                                <li><a href="#">Accesorios de Baño</a></li>
+                                                                <li><a href="#">Maquillaje y Cosméticos</a></li>
+                                                                <li><a href="#">Protección de la Piel</a></li>
+                                                                <li><a href="#">Cuidado del Cabello</a></li>
+                                                                <li><a href="#">Aceites esenciales</a></li>
+                                                                <li><a href="#">Fragancias</a></li>
+                                                                <li><a href="#">Jabones de Baño</a></li>
+                                                                <li><a href="#">Máscaras Faciales</a></li>
+                                                                <li><a href="#">Kits de spa y regalos</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flexcol">
+                                                        <div class="row">
+                                                            <h4>Mejores Marcas</h4>
+                                                            <ul class="women-brands">
+                                                                <li><a href="#">Nike</a></li>
+                                                                <li><a href="#">Louis Vuitton</a></li>
+                                                                <li><a href="#">Hermes</a></li>
+                                                                <li><a href="#">Gucci</a></li>
+                                                                <li><a href="#">Zalando</a></li>
+                                                                <li><a href="#">Tiffany & Co.</a></li>
+                                                                <li><a href="#">Zara</a></li>
+                                                                <li><a href="#">H&M</a></li>
+                                                                <li><a href="#">Cartier</a></li>
+                                                                <li><a href="#">Chanel</a></li>
+                                                                <li><a href="#">Hurley</a></li>
+                                                            </ul>
+                                                            <a href="#" class="view-all">Ver todas las marcas <i class="ri-arrow-right-line"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flexcol products">
+                                                        <div class="row">
+                                                            <div class="media">
+                                                                <div class="thumbnail object-cover">
+                                                                    <a href="#">
+                                                                        <img src="assets/products/apparel4.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="text-content">
+                                                                <h4>Más buscado!</h4>
+                                                                <a href="#" class="primary-button">Ordenar ahora</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Hombre</a></li>
+                                    <li>
+                                        <a href="#">Deportes
+                                            <div class="fly-item"><span>New!</span></div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="right">
+                            <ul class="flexitem second-links">
+                                <li class="mobile-hide"><a href="#">
+                                    <div class="icon-large"><i class="ri-heart-line"></i></div>
+                                    <div class="fly-item"><span class="item-number">0</span></div>
+                                </a></li>
+                                <li><a href="#" class="iscart">
+                                    <div class="icon-large">
+                                        <i class="ri-shopping-cart-line"></i>
+                                        <div class="fly-item"><span class="item-number">0</span></div>
+                                    </div>
+                                    <div class="icon-text">
+                                        <div class="mini-text">Total</div>
+                                        <div class="cart-total">S/0.00</div>
+                                    </div>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-main mobile-hide">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="left">
+                            <div class="dpt-cat">
+                                <div class="dpt-head">
+                                    <div class="main-text">Todos los departamentos</div>
+                                    <mini-text class="mobile-hide">Total 1059 Productos</mini-text>
+                                    <a href="#" class="dpt-trigger mobile-hide">
+                                        <i class="ri-menu-3-line ri-xl"></i>
+                                    </a>
+                                </div>
+                                <div class="dpt-menu">
+                                    <ul class="second-links">
+                                        <li class="has-child beauty">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-bear-smile-line"></i></div>
+                                                Belleza
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">Maquillaje</a></li>
+                                                <li><a href="#">Protección de la Piel</a></li>
+                                                <li><a href="#">Cuidado del Cabello</a></li>
+                                                <li><a href="#">Fragancias</a></li>
+                                                <li><a href="#">Cuidado de Pies y Manos</a></li>
+                                                <li><a href="#">Herramientas y Accesorios</a></li>
+                                                <li><a href="#">Afeitado y Depilación</a></li>
+                                                <li><a href="#">Cuidado Personal</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-child electric">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-bluetooth-connect-line"></i></div>
+                                                Electrónica
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">Cámara</a></li>
+                                                <li><a href="#">Telefonos</a></li>
+                                                <li><a href="#">Computadoras</a></li>
+                                                <li><a href="#">GPS & Navegación</a></li>
+                                                <li><a href="#">Auriculares</a></li>
+                                                <li><a href="#">Audio</a></li>
+                                                <li><a href="#">Television</a></li>
+                                                <li><a href="#">Video Projectores</a></li>
+                                                <li><a href="#">Tecnología usable</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-child fashion">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-t-shirt-air-line"></i></div>
+                                                Moda Femenina
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">Ropa</a></li>
+                                                <li><a href="#">Zapatos</a></li>
+                                                <li><a href="#">Joyas</a></li>
+                                                <li><a href="#">Relojes</a></li>
+                                                <li><a href="#">Bolsos</a></li>
+                                                <li><a href="#">Accesorios</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-shirt-line"></i></div>
+                                                Moda de hombres
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-user-5-line"></i></div>
+                                                Moda para niñas
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-user-6-line"></i></div>
+                                                Moda para niños
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-heart-pulse-line"></i></div>
+                                                Salud y Hogar
+                                            </a>
+                                        </li>
+                                        <li class="has-child homekit">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-home-8-line"></i></div>
+                                                Hogar y Cocina
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                            <div class="mega">
+                                                <div class="flexcol">
+                                                    <div class="row">
+                                                        <h4><a href="#">Cocina y Comedor</a></h4>
+                                                        <ul>
+                                                            <li><a href="#">Cocina</a></li>
+                                                            <li><a href="#">Comedor</a></li>
+                                                            <li><a href="#">Pantry</a></li>
+                                                            <li><a href="#">Buena habitación</a></li>
+                                                            <li><a href="#">Rincón de desayuno</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="row">
+                                                        <h4><a href="#">Vivir</a></h4>
+                                                        <ul>
+                                                            <li><a href="#">Sala de estar</a></li>
+                                                            <li><a href="#">Cuarto familiar</a></li>
+                                                            <li><a href="#">Habitación de verano</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="flexcol">
+                                                    <div class="row">
+                                                        <h4><a href="#">Cama y Baños</a></h4>
+                                                        <ul>
+                                                            <li><a href="#">Baño</a></li>
+                                                            <li><a href="#">Tocador</a></li>
+                                                            <li><a href="#">Dormitorio</a></li>
+                                                            <li><a href="#">Almacenamiento y Armarios</a></li>
+                                                            <li><a href="#">Bebé y Niños</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="row">
+                                                        <h4><a href="#">Utilidad</a></h4>
+                                                        <ul>
+                                                            <li><a href="#">Cuarto de lavado</a></li>
+                                                            <li><a href="#">Garaje</a></li>
+                                                            <li><a href="#">vestíbulo</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="flexcol">
+                                                    <div class="row">
+                                                        <h4><a href="#">Exterior</a></h4>
+                                                        <ul>
+                                                            <li><a href="#">Paisaje</a></li>
+                                                            <li><a href="#">Patio</a></li>
+                                                            <li><a href="#">Plataforma</a></li>
+                                                            <li><a href="#">Piscina</a></li>
+                                                            <li><a href="#">Patio interior</a></li>
+                                                            <li><a href="#">Porch</a></li>
+                                                            <li><a href="#">Exterior</a></li>
+                                                            <li><a href="#">Cocina al aire libre</a></li>
+                                                            <li><a href="#">Patio delantero</a></li>
+                                                            <li><a href="#">Entrada de coches</a></li>
+                                                            <li><a href="#">Casa de la piscina</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-android-line"></i></div>
+                                                Suministros de Mascotas
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-basketball-line"></i></div>
+                                                Deportes
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-shield-star-line"></i></div>
+                                                Los más vendidos
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="search-box">
+                                <form action="" class="search">
+                                    <span class="icon-large"><i class="ri-search-line"></i></span>
+                                    <input type="search" placeholder="Buscar productos">
+                                    <button type="submit">Buscar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--encabezamiento-->
+
+        <main>
+            <div class="slider">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="myslider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="assets/slider/slider0.jpg" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Moda de zapatos</h4>
+                                            <h2><span>Ven y LLevatelo!</span><br><span>Zapatos Nuevos</span></h2>
+                                            <a href="#" class="primary-button">Ordenar ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="assets/slider/slider1.jpg" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Moda Rápida</h4>
+                                            <h2><span>Encaja en tu armario</span><br><span>Con artículos de lujo</span></h2>
+                                            <a href="#" class="primary-button">Ordenar ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="assets/slider/slider2.jpg" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Oferta Rápida</h4>
+                                            <h2><span>Sofá minimalista de madera</span><br><span>50% de descuento adicional</span></h2>
+                                            <a href="#" class="primary-button">Ordenar ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="assets/slider/slider3.jpg" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Las mejores ofertas</h4>
+                                            <h2><span>Home Workout Accsessories</span><br><span>Superar los límites</span></h2>
+                                            <a href="#" class="primary-button">Ordenar ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- control deslizante -->
+
+            <div class="brands">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="item">
+                            <a href="#">
+                                <img src="assets/brands/zara.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="assets/brands/samsung.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="assets/brands/oppo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="assets/brands/asus.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="assets/brands/hurley.png" alt="">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="assets/brands/dng.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- marcas -->
+
+            <div class="trending">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="sectop flexitem">
+                            <h2><span class="circle"></span><span>Productos de tendencia</span></h2>
+                        </div>
+                        <div class="column">
+                            <div class="flexwrap">
+                                <div class="row products big">
+                                    <div class="item">
+                                        <div class="offer">
+                                            <p>La oferta termina en</p>
+                                            <ul class="flexcenter">
+                                                <li>1</li>
+                                                <li>15</li>
+                                                <li>27</li>
+                                                <li>60</li>
+                                            </ul>
+                                        </div>
+                                        <div class="media">
+                                            <div class="image">
+                                                <a href="page-offer.html">
+                                                    <img src="assets/products/apparel4.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="discount circle flexcenter"><span>31%</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="rating">
+                                                <div class="stars"></div>
+                                                <span class="mini-text">(2,548)</span>
+                                            </div>
+                                            <h3 class="main-links"><a href="#">Mujeres felices en un verano floral</a></h3>
+                                            <div class="price">
+                                                <span class="current">S/350.99</span>
+                                                <span class="normal mini-text">S/389.99</span>
+                                            </div>
+                                            <div class="stock mini-text">
+                                                <div class="qty">
+                                                    <span>Stock: <strong class="qty-available">107</strong></span>
+                                                    <span>Vendidos: <strong class="qty-sold">3,459</strong></span>
+
+                                                </div>
+                                                <div class="bar">
+                                                    <div class="available"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row products mini">
+                                    <div class="item">
+                                        <div class="media">
+                                            <div class="thumbnail object-cover">
+                                                <a href="#">
+                                                    <img src="assets/products/apparel3.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="discount circle flexcenter"><span>32%</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="main-links"><a href="#">Vestido de abrigo de mujer, negro</a></h3>
+
+                                            <div class="rating">
+                                                <div class="stars"></div>
+                                                <span class="mini-text">(2,548)</span>
+                                            </div>
+                                            <div class="price">
+                                                <span class="current">S/350.99</span>
+                                                <span class="normal mini-text">S/389.99</span>
+                                            </div>
+                                            <div class="mini-text">
+                                                <p>2975 Vendidos</p>
+                                                <p>Envío gratis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="media">
+                                            <div class="thumbnail object-cover">
+                                                <a href="#">
+                                                    <img src="assets/products/apparel1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="discount circle flexcenter"><span>25%</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="main-links"><a href="#">Hombres de Negro</a></h3>
+
+                                            <div class="rating">
+                                                <div class="stars"></div>
+                                                <span class="mini-text">(1,955)</span>
+                                            </div>
+                                            <div class="price">
+                                                <span class="current">S/150.99</span>
+                                                <span class="normal mini-text">S/189.99</span>
+                                            </div>
+                                            <div class="mini-text">
+                                                <p>2584 Vendidos</p>
+                                                <p>Envío gratis</p>
+                                                <p class="stock-danger">Stock: Ultimos 7!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="media">
+                                            <div class="thumbnail object-cover">
+                                                <a href="#">
+                                                    <img src="assets/products/home1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="discount circle flexcenter"><span>37%</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="main-links"><a href="#">Sofá de terciopelo Vonanda, artesanía moderna de mediados de siglo</a></h3>
+
+                                            <div class="rating">
+                                                <div class="stars"></div>
+                                                <span class="mini-text">(1,559)</span>
+                                            </div>
+                                            <div class="price">
+                                                <span class="current">S/1500.99</span>
+                                                <span class="normal mini-text">S/1890.99</span>
+                                            </div>
+                                            <div class="mini-text">
+                                                <p>2151 Vendidos</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="media">
+                                            <div class="thumbnail object-cover">
+                                                <a href="#">
+                                                    <img src="assets/products/electronic3.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="discount circle flexcenter"><span>20%</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="main-links"><a href="#">Auriculares inalámbricos sobre la oreja, auriculares Bluetooth con micrófono</a></h3>
+
+                                            <div class="rating">
+                                                <div class="stars"></div>
+                                                <span class="mini-text">(1,411)</span>
+                                            </div>
+                                            <div class="price">
+                                                <span class="current">S/290.99</span>
+                                                <span class="normal mini-text">S/320.99</span>
+                                            </div>
+                                            <div class="mini-text">
+                                                <p>1843 Vendidos</p>
+                                                <p>Envío gratis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row products mini">
+                                    <div class="item">
+                                        <div class="media">
+                                            <div class="thumbnail object-cover">
+                                                <a href="page-single.html">
+                                                    <img src="assets/products/shoe1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="discount circle flexcenter"><span>32%</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="main-links"><a href="#">Zapatos con cordones para hombre, con plantillas de soporte para el arco</a></h3>
+
+                                            <div class="rating">
+                                                <div class="stars"></div>
+                                                <span class="mini-text">(2,548)</span>
+                                            </div>
+                                            <div class="price">
+                                                <span class="current">S/320.99</span>
+                                                <span class="normal mini-text">S/350.99</span>
+                                            </div>
+                                            <div class="mini-text">
+                                                <p>2975 Vendidos</p>
+                                                <p>Envío gratis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="media">
+                                            <div class="thumbnail object-cover">
+                                                <a href="#">
+                                                    <img src="assets/products/apparel2.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="discount circle flexcenter"><span>17%</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="main-links"><a href="#">Suéter con capucha de punto ligero para mujer</a></h3>
+
+                                            <div class="rating">
+                                                <div class="stars"></div>
+                                                <span class="mini-text">(994)</span>
+                                            </div>
+                                            <div class="price">
+                                                <span class="current">S/120.99</span>
+                                                <span class="normal mini-text">S/150.99</span>
+                                            </div>
+                                            <div class="mini-text">
+                                                <p>1257 Vendidos</p>
+                                                <p>Envío gratis</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="media">
+                                            <div class="thumbnail object-cover">
+                                                <a href="#">
+                                                    <img src="assets/products/home2.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="discount circle flexcenter"><span>44%</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="main-links"><a href="#">Luz de techo regulable moderna</a></h3>
+
+                                            <div class="rating">
+                                                <div class="stars"></div>
+                                                <span class="mini-text">(543)</span>
+                                            </div>
+                                            <div class="price">
+                                                <span class="current">S/890.99</span>
+                                                <span class="normal mini-text">S/930.99</span>
+                                            </div>
+                                            <div class="mini-text">
+                                                <p>995 Vendidos</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="media">
+                                            <div class="thumbnail object-cover">
+                                                <a href="#">
+                                                    <img src="assets/products/home3.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <div class="hoverable">
+                                                <ul>
+                                                    <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="discount circle flexcenter"><span>18%</span></div>
+                                        </div>
+                                        <div class="content">
+                                            <h3 class="main-links"><a href="#">Gabinete de almacenamiento moderno con puerta y 3 cajones</a></h3>
+
+                                            <div class="rating">
+                                                <div class="stars"></div>
+                                                <span class="mini-text">(335)</span>
+                                            </div>
+                                            <div class="price">
+                                                <span class="current">S/360.99</span>
+                                                <span class="normal mini-text">S/390.99</span>
+                                            </div>
+                                            <div class="mini-text">
+                                                <p>758 Vendidos</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- tendencias -->
+
+            <div class="features">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="column">
+                            <div class="sectop flexitem">
+                                <h2><span class="circle"></span><span>Productos Destacados</span></h2>
+                                <div class="second-links">
+                                    <a href="#" class="view-all">Ver todo<i class="ri-arrow-right-line"></i></a>
+                                </div>
+                            </div>
+                            <div class="products main flexwrap">
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="assets/products/apparel1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"><span>25%</span></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(1,955)</span>
+                                        </div>
+                                        <h3><a href="#">Hombres de Negro</a></h3>
+                                        <div class="price">
+                                            <span class="current">S/150.99</span>
+                                            <span class="normal mini-text">S/189.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="assets/products/apparel2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"><span>17%</span></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(994)</span>
+                                        </div>
+                                        <h3><a href="#">Suéter con capucha de punto ligero para mujer</a></h3>
+                                        <div class="price">
+                                            <span class="current">S/120.99</span>
+                                            <span class="normal mini-text">S/150.99</span>
+                                        </div>
+                                        <!-- estructura adicional -->
+                                        <div class="footer">
+                                            <ul class="mini-text">
+                                                <li>Poliéster algodón</li>
+                                                <li>Tirar de cierre</li>
+                                                <li>Personalidad de la moda</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="assets/products/apparel3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"><span>31%</span></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(3,459)</span>
+                                        </div>
+                                        <h3><a href="#">Vestido de abrigo de mujer, negro</a></h3>
+                                        <div class="price">
+                                            <span class="current">S/350.99</span>
+                                            <span class="normal mini-text">S/389.99</span>
+                                        </div>
+                                        <div class="footer">
+                                            <ul class="mini-text">
+                                                <li>65% Poliéster, 35% Algodón</li>
+                                                <li>Importado</li>
+                                                <li>Lavados a máquina</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="page-offer.html">
+                                                <img src="assets/products/apparel4.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"><span>35%</span></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(10)</span>
+                                        </div>
+                                        <h3><a href="#">Mujeres felices en un verano floral</a></h3>
+                                        <div class="price">
+                                            <span class="current">S/350.99</span>
+                                            <span class="normal mini-text">S/389.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="page-single.html">
+                                                <img src="assets/products/shoe1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"><span>32%</span></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(2,251)</span>
+                                        </div>
+                                        <h3><a href="#">Zapatos con cordones para hombre, con plantillas de soporte para el arco</a></h3>
+                                        <div class="price">
+                                            <span class="current">S/320.99</span>
+                                            <span class="normal mini-text">S/350.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="assets/products/shoe2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"><span>30%</span></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(1,237)</span>
+                                        </div>
+                                        <h3><a href="#">Skechers Go Joy - Zapatillas para caminatas para mujer</a></h3>
+                                        <div class="price">
+                                            <span class="current">S/150.99</span>
+                                            <span class="normal mini-text">S/180.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="assets/products/shoe3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"><span>25%</span></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(106)</span>
+                                        </div>
+                                        <h3><a href="#">Zapatillas de deporte para caminatas para mujer</a></h3>
+                                        <div class="price">
+                                            <span class="current">S/390.99</span>
+                                            <span class="normal mini-text">S/420.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="media">
+                                        <div class="thumbnail object-cover">
+                                            <a href="#">
+                                                <img src="assets/products/shoe4.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="hoverable">
+                                            <ul>
+                                                <li class="active"><a href="#"><i class="ri-heart-line"></i></a></li>
+                                                <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                <li><a href=""><i class="ri-shuffle-line"></i></a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount circle flexcenter"><span>24%</span></div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="rating">
+                                            <div class="stars"></div>
+                                            <span class="mini-text">(25)</span>
+                                        </div>
+                                        <h3><a href="#">Zapato Tosca de verano para mujer</a></h3>
+                                        <div class="price">
+                                            <span class="current">S/310.99</span>
+                                            <span class="normal mini-text">S/350.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- featured products -->
+
+            <div class="banners">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="column">
+                            <div class="banner flexwrap">
+                                <div class="row">
+                                    <div class="item">
+                                        <div class="image">
+                                            <img src="assets/banner/banner1.jpg" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Venta Brutal!</h4>
+                                            <h3><span>Obtenga el trato aquí</span><br>silla de la sala de estar</h4>
+                                            <a href="#" class="primary-button">Ordenar ahora</a>
+                                        </div>
+                                        <a href="#" class="over-link"></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="item get-gray">
+                                        <div class="image">
+                                            <img src="assets/banner/banner2.jpg" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Venta Brutal!</h4>
+                                            <h3><span>Descuento todos los días</span><br>Traje de oficina</h3>
+                                            <a href="#" class="primary-button">Ordenar ahora</a>
+                                        </div>
+                                        <a href="#" class="over-link"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- pancartas -->
+
+                        <div class="product-categories flexwrap">
+                            <div class="row">
+                                <div class="item">
+                                    <div class="image">
+                                        <img src="assets/banner/procat1.jpg" alt="">
+                                    </div>
+                                    <div class="content mini-links">
+                                        <h4>Belleza</h4>
+                                        <ul class="flexcol">
+                                            <li><a href="#">Maquillaje</a></li>
+                                            <li><a href="#">Protección de la Piel</a></li>
+                                            <li><a href="#">Cuidado del Cabello</a></li>
+                                            <li><a href="#">Fragancias</a></li>
+                                            <li><a href="#">Cuidado de Pies y Manos</a></li>
+                                        </ul>
+                                        <div class="second-links">
+                                            <a href="#" class="view-all">Ver todo<i class="ri-arrow-right-line"></i>
+                                         </a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="item">
+                                    <div class="image">
+                                        <a href="#">
+                                            <img src="assets/banner/procat2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="content mini-links">
+                                        <h4><a href="#">Artilugio</a></h4>
+                                        <ul class="flexcol">
+                                            <li><a href="#">Cámara</a></li>
+                                            <li><a href="#">Celulares</a></li>
+                                            <li><a href="#">Computadoras</a></li>
+                                            <li><a href="#">GPS & Navegación</a></li>
+                                            <li><a href="#">Auriculares</a></li>
+                                        </ul>
+                                        <div class="second-links">
+                                            <a href="#" class="view-all">Ver todo <i class="ri-arrow-right-line"></i></a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="item">
+                                    <div class="image">
+                                        <a href="#">
+                                            <img src="assets/banner/procat3.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="content mini-links">
+                                        <h4><a href="#">Decoración del hogar</a></h4>
+                                        <ul class="flexcol">
+                                            <li><a href="#">Cocina</a></li>
+                                            <li><a href="#">Comedor</a></li>
+                                            <li><a href="#">Despensa</a></li>
+                                            <li><a href="#">Buena habitación</a></li>
+                                            <li><a href="#">Rincón de desayuno</a></li>
+                                        </ul>
+                                    <div class="second-links">
+                                        <a href="#" class="view-all">Ver ahora<i class="ri-arrow-right-line"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <!--principal-->
+
+        <footer>
+            <div class="newsletter">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="box">
+                            <div class="content">
+                                <h3>Suscríbase a nuestro boletín</h3>
+                                <p>Reciba actualizaciones por correo electrónico sobre nuestra última tienda y <strong>ofertas especiales</strong></p>
+                            </div>
+                            <form action="" class="search">
+                                <span class="icon-large"><i class="ri-mail-line"></i></span>
+                                <input type="mail" placeholder="Su dirección de correo electrónico" required>
+                                <button type="submit">Suscribete</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Boletin informativo -->
+
+            <div class="widgets">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="flexwrap">
+                            <div class="row">
+                                <div class="item mini-links">
+                                    <h4>Ayuda y contacto</h4>
+                                    <ul class="flexcol">
+                                        <li><a href="#">Su cuenta</a></li>
+                                        <li><a href="#">Tus ordenes</a></li>
+                                        <li><a href="#">Tarifas de envio</a></li>
+                                        <li><a href="#">Devoluciones</a></li>
+                                        <li><a href="#">Asistente</a></li>
+                                        <li><a href="#">Ayuda</a></li>
+                                        <li><a href="#">Contacta con nosotros</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="item mini-links">
+                                    <h4>Categorías de Producto</h4>
+                                    <ul class="flexcol">
+                                        <li><a href="#">Belleza</a></li>
+                                        <li><a href="#">Electrónica</a></li>
+                                        <li><a href="#">Moda femenina</a></li>
+                                        <li><a href="#">Moda de hombres</a></li>
+                                        <li><a href="#">Moda para niñas</a></li>
+                                        <li><a href="#">Moda para niños</a></li>
+                                        <li><a href="#">Salud y hogar</a></li>
+                                        <li><a href="#">Hogar y cocina</a></li>
+                                        <li><a href="#">Suministros de mascotas</a></li>
+                                        <li><a href="#">Deportes</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="item mini-links">
+                                    <h4>Información de pago</h4>
+                                    <ul class="flexcol">
+                                        <li><a href="#">Tarjeta de visita</a></li>
+                                        <li><a href="#">Compra con Puntos</a></li>
+                                        <li><a href="#">Recarga tu saldo</a></li>
+                                        <li><a href="#">PayPal</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="item mini-links">
+                                    <h4>Sobre nosotros</h4>
+                                    <ul class="flexcol">
+                                        <li><a href="#">Información de la compañía</a></li>
+                                        <li><a href="#">Noticias</a></li>
+                                        <li><a href="#">Inversores</a></li>
+                                        <li><a href="#">Carreras</a></li>
+                                        <li><a href="#">Políticas</a></li>
+                                        <li><a href="#">Valoración de los clientes</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- widgets -->
+
+            <div class="footer-info">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="flexcol">
+                            <div class="logo">
+                               <a href=""><span class="circle"></span>.Jhossy</a> 
+                            </div>
+                            <div class="socials">
+                                <ul class="flexitem">
+                                    <li><a href="#"><i class="ri-twitter-line"></i></a></li>
+                                    <li><a href="#"><i class="ri-facebook-line"></i></a></li>
+                                    <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+                                    <li><a href="#"><i class="ri-linkedin-line"></i></a></li>
+                                    <li><a href="#"><i class="ri-youtube-line"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="mini-text">Copyrigth 2022 &copy; Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--pie de página-->
+
+        <div class="menu-bottom desktop-hide">
+            <div class="container">
+                <div class="wrapper">
+                    <nav>
+                        <ul class="flexitem">
+                            <li>
+                                <a href="#">
+                                    <i class="ri-bar-chart-line"></i>
+                                    <span>Tendencias</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ri-user-6-line"></i>
+                                    <span>Cuenta</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ri-heart-line"></i>
+                                    <span>Lista de deseos</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0" class="t-search">
+                                    <i class="ri-search-line"></i>
+                                    <span>Buscar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <i class="ri-shopping-cart-line"></i>
+                                    <span>Cart</span>
+                                    <div class="fly-item">
+                                        <span class="item-number">0</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- parte inferior del menú -->
+
+        <div class="search-bottom desktop-hide">
+            <div class="container">
+                <div class="wrapper">
+
+                    <form action="" class="search">
+                        <a href="#" class="t-close search-close flexcenter"><i class="ri-close-line"></i></a>
+                        <span class="icon-large"><i class="ri-search-line"></i></span>
+                        <input type="search" placeholder="Su dirección de correo electrónico" required>
+                        <button type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- fondo de búsqueda -->
+
+        <div class="overlay"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>

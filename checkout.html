@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristian Pablo - Proyecto Final 2 - JavaScript</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+</head>
+<body>
+    <div id="page" class="site page-cart">
+
+        <aside class="site-off desktop-hide">
+            <div class="off-canvas">
+                <div class="canvas-head flexitem">
+                    <div class="logo"><a href="/"><span class="circle"></span>.Jhossy</a></div>
+                    <a href="#" class="t-close flexcenter"><i class="ri-close-line"></i></a>  
+                </div>
+                <div class="departments"></div>
+                <nav></nav>
+                <div class="thetop-nav"></div>
+            </div>
+        </aside>
+
+        <header>
+            <div class="header-top mobile-hide">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="left">
+                            <ul class="flexitem main-links">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Productos Destacados</a></li>
+                                <li><a href="#">Lista de deseos</a></li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <ul class="flexitem main-links">
+                                    <li><a href="#">Sign Up</a></li>
+                                    <li><a href="#">Mi cuenta</a></li>
+                                    <li><a href="#">Rastreo de orden</a></li>
+                                    <li><a href="#">SOL <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
+                                        <ul>
+                                            <li class="current"><a href="#">SOL</a></li>
+                                            <li><a href="#">USD</a></li>
+                                            <li><a href="#">EURO</a></li>
+                                            <li><a href="#">GBP</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Español <span class="icon-small"><i class="ri-arrow-down-s-line"></i></span></a>
+                                        <ul>
+                                            <li class="current"><a href="#">Español</a></li>
+                                            <li><a href="#">Ingles</a></li>
+                                            <li><a href="#">German</a></li>
+                                            <li><a href="#">Portugues</a></li>
+                                        </ul>
+                                    </li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header-top -->
+            <div class="header-nav">
+                <div class="contanier">
+                    <div class="wrapper flexitem">
+                        <a href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
+                        <div class="left flexitem">
+                            <div class="logo"><a href="/"><span class="circle"></span>.Jhossy</a></div>
+                            <nav class="mobile-hide">
+                                <ul class="flexitem second-links">
+                                    <li><a href="index.html">Inicio</a></li>
+                                    <li><a href="page-category.html">Tienda</a></li>
+                                    <li class="has-child">
+                                        <a href="#">Mujer
+                                            <div class="icon-small"><i class="ri-arrow-down-s-line"></i></div>
+                                        </a>
+                                        <div class="mega">
+                                            <div class="container">
+                                                <div class="wrapper">
+                                                    <div class="flexcol">
+                                                        <div class="row">
+                                                            <h4>Ropa de Mujer</h4>
+                                                            <ul>
+                                                                <li><a href="#">Vestidos</a></li>
+                                                                <li><a href="#">Camisetas y tops</a></li>
+                                                                <li><a href="#">Chaquetas y Abrigos</a></li>
+                                                                <li><a href="#">Pantalones y capri</a></li>
+                                                                <li><a href="#">Suéteres</a></li>
+                                                                <li><a href="#">Disfraces</a></li>
+                                                                <li><a href="#">Sudadera</a></li>
+                                                                <li><a href="#">Pijamas y Batas</a></li>
+                                                                <li><a href="#">Shorts</a></li>
+                                                                <li><a href="#">Trajes de baño</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flexcol">
+                                                        <div class="row">
+                                                            <h4>Joyas</h4>
+                                                            <ul>
+                                                                <li><a href="#">Accesorios</a></li>
+                                                                <li><a href="#">Bolsos y Monederos</a></li>
+                                                                <li><a href="#">Collares</a></li>
+                                                                <li><a href="#">Anillos</a></li>
+                                                                <li><a href="#">Aretes</a></li>
+                                                                <li><a href="#">Brazaletes</a></li>
+                                                                <li><a href="#">Joyas para el cuerpo</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flexcol">
+                                                        <div class="row">
+                                                            <h4>Belleza</h4>
+                                                            <ul>
+                                                                <li><a href="#">Accesorios de baño</a></li>
+                                                                <li><a href="#">Maquillaje y Cosméticos</a></li>
+                                                                <li><a href="#">Protección de la piel</a></li>
+                                                                <li><a href="#">Cuidado del cabello</a></li>
+                                                                <li><a href="#">Aceites esenciales</a></li>
+                                                                <li><a href="#">Fragancias</a></li>
+                                                                <li><a href="#">Jabones de Baño</a></li>
+                                                                <li><a href="#">Máscaras faciales y cubiertas</a></li>
+                                                                <li><a href="#">Kits de spa y regalos</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flexcol">
+                                                        <div class="row">
+                                                            <h4>Mejores marcas</h4>
+                                                            <ul class="women-brands">
+                                                                <li><a href="#">Nike</a></li>
+                                                                <li><a href="#">Louis Vuitton</a></li>
+                                                                <li><a href="#">Hermes</a></li>
+                                                                <li><a href="#">Gucci</a></li>
+                                                                <li><a href="#">Zalando</a></li>
+                                                                <li><a href="#">Tiffany & Co.</a></li>
+                                                                <li><a href="#">Zara</a></li>
+                                                                <li><a href="#">H&M</a></li>
+                                                                <li><a href="#">Cartier</a></li>
+                                                                <li><a href="#">Chanel</a></li>
+                                                                <li><a href="#">Hurley</a></li>
+                                                            </ul>
+                                                            <a href="#" class="view-all">Ver todas las marcas <i class="ri-arrow-right-line"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flexcol products">
+                                                        <div class="row">
+                                                            <div class="media">
+                                                                <div class="thumbnail object-cover">
+                                                                    <a href="#">
+                                                                        <img src="assets/products/apparel4.jpg" alt="">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="text-content">
+                                                                <h4>Más buscado!</h4>
+                                                                <a href="#" class="primary-button">Ordenar ahora</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Hombre</a></li>
+                                    <li>
+                                        <a href="#">Deportes
+                                            <div class="fly-item"><span>New!</span></div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="right">
+                            <ul class="flexitem second-links">
+                                <li class="mobile-hide"><a href="#">
+                                    <div class="icon-large"><i class="ri-heart-line"></i></div>
+                                    <div class="fly-item"><span class="item-number">0</span></div>
+                                </a></li>
+                                <li class="iscart"><a href="cart.html">
+                                    <div class="icon-large">
+                                        <i class="ri-shopping-cart-line"></i>
+                                        <div class="fly-item"><span class="item-number">5</span></div>
+                                    </div>
+                                    <div class="icon-text">
+                                        <div class="mini-text">Total</div>
+                                        <div class="cart-total">S/4,624.95</div>
+                                    </div>
+                                </a>
+
+                                <div class="mini-cart">
+                                    <div class="content">
+                                        <div class="cart-head">
+                                            5 artículos en el carrito
+                                        </div>
+                                        <div class="cart-body">
+                                            <ul class="products mini">
+                                                <li class="item">
+                                                    <div class="thumbnail object-cover">
+                                                        <a href="#"><img src="assets/products/home2.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <p><a href="#">Luz de techo regulable moderna</a></p>
+                                                        <span class="price">
+                                                            <span>S/890.99</span>
+                                                            <span class="fly-item"><span>x2</span></span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="" class="item-remove"><i class="ri-close-line"></i></a>
+                                                </li>
+                                                <li class="item">
+                                                    <div class="thumbnail object-cover">
+                                                        <a href="#"><img src="assets/products/home3.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <p><a href="#">Gabinete de almacenamiento moderno con puerta y 3 cajones</a></p>
+                                                        <span class="price">
+                                                            <span>S/360.99</span>
+                                                            <span class="fly-item"><span>x1</span></span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="" class="item-remove"><i class="ri-close-line"></i></a>
+                                                </li>
+                                                <li class="item">
+                                                    <div class="thumbnail object-cover">
+                                                        <a href="#"><img src="assets/products/home4.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <p><a href="#">Sofá de terciopelo Vonanda</a></p>
+                                                        <span class="price">
+                                                            <span>S/890.99</span>
+                                                            <span class="fly-item"><span>x1</span></span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="" class="item-remove"><i class="ri-close-line"></i></a>
+                                                </li>
+                                                <li class="item">
+                                                    <div class="thumbnail object-cover">
+                                                        <a href="#"><img src="assets/products/home5.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <p><a href="#">Impresionante cama para una pareja</a></p>
+                                                        <span class="price">
+                                                            <span>S/1590.99</span>
+                                                            <span class="fly-item"><span>x1</span></span>
+                                                        </span>
+                                                    </div>
+                                                    <a href="" class="item-remove"><i class="ri-close-line"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="cart-footer">
+                                            <div class="subtotal">
+                                                <p>Subtotal</p>
+                                                <p><strong>S/4,624.95</strong></p>  
+                                            </div>
+                                            <div class="actions">
+                                                <a href="checkout.html" class="primary-button">Verificar</a>
+                                                <a href="cart.html" class="secondary-button">Ver carrito</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- encabezado-nav -->
+
+            <div class="header-main mobile-hide">
+                <div class="container">
+                    <div class="wrapper flexitem">
+                        <div class="left">
+                            <div class="dpt-cat">
+                                <div class="dpt-head">
+                                    <div class="main-text">Todos los departamentos</div>
+                                    <mini-text class="mobile-hide">Total 1059 Productos</mini-text>
+                                    <a href="#" class="dpt-trigger mobile-hide">
+                                        <i class="ri-menu-3-line ri-xl"></i>
+                                        <i class="ri-close-line ri-xl"></i>
+                                    </a>
+                                </div>
+                                <div class="dpt-menu">
+                                    <ul class="second-links">
+                                        <li class="has-child beauty">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-bear-smile-line"></i></div>
+                                                Belleza
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">Maquillaje</a></li>
+                                                <li><a href="#">Protección de la piel</a></li>
+                                                <li><a href="#">Cuidado del cabello</a></li>
+                                                <li><a href="#">Fragancias</a></li>
+                                                <li><a href="#">Cuidado de pies y manos</a></li>
+                                                <li><a href="#">Herramientas y accesorios</a></li>
+                                                <li><a href="#">Afeitado y Depilación</a></li>
+                                                <li><a href="#">Cuidado personal</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-child electric">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-bluetooth-connect-line"></i></div>
+                                                Electronica
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">Cámara</a></li>
+                                                <li><a href="#">Teléfonos</a></li>
+                                                <li><a href="#">Computadoras</a></li>
+                                                <li><a href="#">GPS & Navegación</a></li>
+                                                <li><a href="#">Auriculares</a></li>
+                                                <li><a href="#">Audio</a></li>
+                                                <li><a href="#">Television</a></li>
+                                                <li><a href="#">Video Projectores</a></li>
+                                                <li><a href="#">Tecnología usable</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-child fashion">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-t-shirt-air-line"></i></div>
+                                                Moda femenina
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                            <ul>
+                                                <li><a href="#">Ropa</a></li>
+                                                <li><a href="#">Zapatos</a></li>
+                                                <li><a href="#">Joyas</a></li>
+                                                <li><a href="#">Relojes</a></li>
+                                                <li><a href="#">Bolsos</a></li>
+                                                <li><a href="#">Accesorios</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-shirt-line"></i></div>
+                                                Moda para hombres
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-user-5-line"></i></div>
+                                                Moda para niñas
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-user-6-line"></i></div>
+                                                Moda para niños
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-heart-pulse-line"></i></div>
+                                                Salud y hogar
+                                            </a>
+                                        </li>
+                                        <li class="has-child homekit">
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-home-8-line"></i></div>
+                                                Hogar y cocina
+                                                <div class="icon-small"><i class="ri-arrow-right-s-line"></i></div>
+                                            </a>
+                                            <div class="mega">
+                                                <div class="flexcol">
+                                                    <div class="row">
+                                                        <h4><a href="#">Cocina y Comedor</a></h4>
+                                                        <ul>
+                                                            <li><a href="#">Cocina</a></li>
+                                                            <li><a href="#">Comedor</a></li>
+                                                            <li><a href="#">Despensa</a></li>
+                                                            <li><a href="#">Buena habitación</a></li>
+                                                            <li><a href="#">Rincón de desayuno</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="row">
+                                                        <h4><a href="#">Vivir</a></h4>
+                                                        <ul>
+                                                            <li><a href="#">Sala de estar</a></li>
+                                                            <li><a href="#">Cuarto familiar</a></li>
+                                                            <li><a href="#">habitación de verano</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="flexcol">
+                                                    <div class="row">
+                                                        <h4><a href="#">Cama y Baños</a></h4>
+                                                        <ul>
+                                                            <li><a href="#">Baño</a></li>
+                                                            <li><a href="#">Tocador</a></li>
+                                                            <li><a href="#">Dormitorio</a></li>
+                                                            <li><a href="#">Armario de almacenamiento</a></li>
+                                                            <li><a href="#">Bebé y niños</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="row">
+                                                        <h4><a href="#">Utilidad</a></h4>
+                                                        <ul>
+                                                            <li><a href="#">Cuarto de lavado</a></li>
+                                                            <li><a href="#">Garaje</a></li>
+                                                            <li><a href="#">vestíbulo</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="flexcol">
+                                                    <div class="row">
+                                                        <h4><a href="#">Exterior</a></h4>
+                                                        <ul>
+                                                            <li><a href="#">Paisaje</a></li>
+                                                            <li><a href="#">Patio</a></li>
+                                                            <li><a href="#">Plataforma</a></li>
+                                                            <li><a href="#">Piscina</a></li>
+                                                            <li><a href="#">Patio interior</a></li>
+                                                            <li><a href="#">Porch</a></li>
+                                                            <li><a href="#">Exterior</a></li>
+                                                            <li><a href="#">Cocina al aire libre</a></li>
+                                                            <li><a href="#">Patio delantero</a></li>
+                                                            <li><a href="#">Entrada de coches</a></li>
+                                                            <li><a href="#">casa de la piscina</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-android-line"></i></div>
+                                                Suministros de mascotas
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-basketball-line"></i></div>
+                                                Deportes
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="icon-large"><i class="ri-shield-star-line"></i></div>
+                                                Los más vendidos
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="search-box">
+                                <form action="" class="search">
+                                    <span class="icon-large"><i class="ri-search-line"></i></span>
+                                    <input type="search" placeholder="Buscar productos">
+                                    <button type="submit">Buscar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- encabezado-principal -->
+
+        </header>
+        <!--encabezamiento-->
+
+        <main>
+            
+            <div class="single-checkout">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="checkout flexwrap">
+                            <div class="item left styled">
+                                <h1>Dirección de Envío</h1>
+                                <form action="">
+                                    <p>
+                                        <label for="email">Dirección de correo electrónico <span></span></label>
+                                        <input type="email" name="email" id="email" autocomplete="off" required>
+                                    </p>
+                                    <p>
+                                        <label for="fname">Nombre <span></span></label>
+                                        <input type="text" id="fname" required>
+                                    </p>
+                                    <p>
+                                        <label for="lname">Apellidos <span></span></label>
+                                        <input type="text" id="lname" required>
+                                    </p>
+                                    <p>
+                                        <label for="cname">Nombre de empresa</label>
+                                        <input type="text" id="cname">
+                                    </p>
+                                    <p>
+                                        <label for="adress">Dirección <span></span></label>
+                                        <input type="text" id="adress" required>
+                                    </p>
+                                    <p>
+                                        <label for="city">Ciudad <span></span></label>
+                                        <input type="text" id="city" required>
+                                    </p>
+                                    <p>
+                                        <label for="state">Provincia o Estado <span></span></label>
+                                        <input type="text" id="state" required>
+                                    </p>
+                                    <p>
+                                        <label for="postal">Código Postal <span></span></label>
+                                        <input type="number" id="postal" required>
+                                    </p>
+                                    <p>
+                                        <label for="country">País</label>
+                                        <select name="country" id="country">
+                                            <option value=""></option>
+                                            <option value="1">Estados Unidos</option>
+                                            <option value="2">Chile</option>
+                                            <option value="3">Brasil</option>
+                                            <option value="4" selected="selected">Perú</option>
+                                            <option value="5">Otros</option>
+                                        </select>
+                                    </p>
+                                    <p>
+                                        <label for="phone">Número de teléfono <span></span></label>
+                                        <input type="number" id="phone" required>
+                                    </p>
+                                    <p>
+                                        <label>Notas de pedido (opcional)</label>
+                                        <textarea cols="30" rows="10"></textarea>
+                                    </p>
+                                    <p class="checkset">
+                                        <input type="checkbox" id="anaccount">
+                                        <label for="anaccount">¿Crea una cuenta?</label>
+                                    </p>
+
+                                </form>
+                                <div class="shipping-methods">
+                                    <h2>Métodos de envío</h2>
+                                    <p class="checkset">
+                                        <input type="radio" checked>
+                                        <label>S/5.00 Tasa de vuelo</label>
+                                    </p>
+                                </div>
+                                <div class="primary-checkout">
+                                    <button class="primary-button" onclick="valida1()">Realizar pedido</button>
+                                </div>
+                            </div>
+                            <div class="item right">
+                                <h2>Resumen del pedido</h2>
+                                <div class="summary-order is_sticky">
+                                    <div class="summary-totals">
+                                        <ul>
+                                            <li>
+                                                <span>Subtotal</span>
+                                                <span>S/4,624.95</span>
+                                            </li>
+                                            <li>
+                                                <span>Descuento</span>
+                                                <span>-S/100.00</span>
+                                            </li>
+                                            <li>
+                                                <span>Envío: Flet</span>
+                                                <span>S/10.00</span>
+                                            </li>
+                                            <li>
+                                                <span>Total</span>
+                                                <span>S/4,535.95</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <ul class="products mini">
+                                        <li class="item">
+                                            <div class="thumbnail object-cover">
+                                                <img src="assets/products/home2.jpg" alt="">
+                                            </div>
+                                            <div class="item-content">
+                                                <p>Luz de techo regulable moderna</p>
+                                                <span class="price">
+                                                    <span>S/890.99</span>
+                                                    <span>x 2</span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="thumbnail object-cover">
+                                                <img src="assets/products/home3.jpg">
+                                            </div>
+                                            <div class="item-content">
+                                                <p>Gabinete de almacenamiento moderno con puerta y 3 cajones</p>
+                                                <span class="price">
+                                                    <span>S/360.99</span>
+                                                    <span>x 1</span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="thumbnail object-cover">
+                                                <img src="assets/products/home4.jpg">
+                                            </div>
+                                            <div class="item-content">
+                                                <p>Sofá de terciopelo Vonanda</p>
+                                                <span class="price">
+                                                    <span>S/890.99</span>
+                                                    <span>x 1</span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="thumbnail object-cover">
+                                                <img src="assets/products/home5.jpg">
+                                            </div>
+                                            <div class="item-content">
+                                                <p>Impresionante cama para una pareja</p>
+                                                <span class="price">
+                                                    <span>S/1590.99</span>
+                                                    <span>x 1</span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+          
+
+            
+
+        </main>
+        <!--principal-->
+
+        <footer>
+            <div class="newsletter">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="box">
+                            <div class="content">
+                                <h3>Suscríbase a nuestro boletín</h3>
+                                <p>Reciba actualizaciones por correo electrónico sobre nuestra última tienda y <strong>ofertas especiales</strong></p>
+                            </div>
+                            <form action="" class="search">
+                                <span class="icon-large"><i class="ri-mail-line"></i></span>
+                                <input type="mail" placeholder="Su dirección de correo electrónico" required>
+                                <button type="submit">Suscribete</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Boletin informativo -->
+
+            <div class="widgets">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="flexwrap">
+                            <div class="row">
+                                <div class="item mini-links">
+                                    <h4>Ayuda y contacto</h4>
+                                    <ul class="flexcol">
+                                        <li><a href="#">Su cuenta</a></li>
+                                        <li><a href="#">Tus ordenes</a></li>
+                                        <li><a href="#">Tarifas de envio</a></li>
+                                        <li><a href="#">Devoluciones</a></li>
+                                        <li><a href="#">Asistente</a></li>
+                                        <li><a href="#">Ayuda</a></li>
+                                        <li><a href="#">Contacta con nosotros</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="item mini-links">
+                                    <h4>Categorías de Producto</h4>
+                                    <ul class="flexcol">
+                                        <li><a href="#">Belleza</a></li>
+                                        <li><a href="#">Electronica</a></li>
+                                        <li><a href="#">Moda femenina</a></li>
+                                        <li><a href="#">Moda para hombres</a></li>
+                                        <li><a href="#">Moda para niñas</a></li>
+                                        <li><a href="#">Moda para niños</a></li>
+                                        <li><a href="#">Salud y hogar</a></li>
+                                        <li><a href="#">Hogar y cocina</a></li>
+                                        <li><a href="#">Suministros de mascotas</a></li>
+                                        <li><a href="#">Deportes</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="item mini-links">
+                                    <h4>Información de pago</h4>
+                                    <ul class="flexcol">
+                                        <li><a href="#">tarjeta de visita</a></li>
+                                        <li><a href="#">Compra con Puntos</a></li>
+                                        <li><a href="#">Recarga tu saldo</a></li>
+                                        <li><a href="#">Paypal</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="item mini-links">
+                                    <h4>Sobre nosotros</h4>
+                                    <ul class="flexcol">
+                                        <li><a href="#">Información de la compañía</a></li>
+                                        <li><a href="#">Noticias</a></li>
+                                        <li><a href="#">Inversores</a></li>
+                                        <li><a href="#">Carreras</a></li>
+                                        <li><a href="#">Políticas</a></li>
+                                        <li><a href="#">Valoración de los clientes</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- artilugio -->
+
+            <div class="footer-info">
+                <div class="container">
+                    <div class="wrapper">
+                        <div class="flexcol">
+                            <div class="logo">
+                               <a href=""><span class="circle"></span>.Jhossy</a> 
+                            </div>
+                            <div class="socials">
+                                <ul class="flexitem">
+                                    <li><a href="#"><i class="ri-twitter-line"></i></a></li>
+                                    <li><a href="#"><i class="ri-facebook-line"></i></a></li>
+                                    <li><a href="#"><i class="ri-instagram-line"></i></a></li>
+                                    <li><a href="#"><i class="ri-linkedin-line"></i></a></li>
+                                    <li><a href="#"><i class="ri-youtube-line"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="mini-text">Copyrigth 2022 &copy; Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--pie de página-->
+
+        <div class="menu-bottom desktop-hide">
+            <div class="container">
+                <div class="wrapper">
+                    <nav>
+                        <ul class="flexitem">
+                            <li>
+                                <a href="#">
+                                    <i class="ri-bar-chart-line"></i>
+                                    <span>Tendencias</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ri-user-6-line"></i>
+                                    <span>Cuenta</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ri-heart-line"></i>
+                                    <span>Lista de deseos</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0" class="t-search">
+                                    <i class="ri-search-line"></i>
+                                    <span>Buscar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0" class="cart-trigger">
+                                    <i class="ri-shopping-cart-line"></i>
+                                    <span>Cart</span>
+                                    <div class="fly-item">
+                                        <span class="item-number">5</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- parte inferior del menú -->
+
+        <div class="search-bottom desktop-hide">
+            <div class="container">
+                <div class="wrapper">
+
+                    <form action="" class="search">
+                        <a href="#" class="t-close search-close flexcenter"><i class="ri-close-line"></i></a>
+                        <span class="icon-large"><i class="ri-search-line"></i></span>
+                        <input type="search" placeholder="Su dirección de correo electrónico" required>
+                        <button type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- fondo de búsqueda -->
+
+        <div id="modal" class="modal">
+            <div class="content flexcol">
+                <div class="image object-cover">
+                    <img src="assets/products/apparel4.jpg" alt="">
+                </div>
+                <h2>Obtenga las últimas ofertas y cupones</h2>
+                <p class="mobile-hide">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam totam doloremque provident quis ipsum necessitatibus.</p>
+                <form action="" class="search">
+                    <span class="icon-large"><i class="ri-mail-line"></i></span>
+                    <input type="mail" id="placeh" placeholder="Su dirección de correo electrónico">
+                    <button onclick="suscrito()">Suscribete</button>
+                </form>
+                <a href="#" class="mini-text">No me muestres esto otra vez</a>
+                <a href="#" class="t-close modalclose flexcenter">
+                    <i class="ri-close-line"></i>
+                </a>
+            </div>
+        </div>
+        <!-- modal -->
+
+        <div class="backtotop">
+            <a href="#" class="flexcol">
+                <i class="ri-arrow-up-line"></i>
+                <span>Arriba</span>
+            </a>
+        </div>
+
+        <div class="overlay"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.3.1/index.js"></script>
+    <script src="javascript.js"></script>
+    <script>
+        const FtoShow ='.filter';
+        const Fpopup = document.querySelector(FtoShow);
+        const Ftrigger = document.querySelector('.filter-trigger');
+
+        Ftrigger.addEventListener('click', () => {
+            setTimeout(() => {
+                if(!Fpopup.classList.contains('show')) {
+                    Fpopup.classList.add('show')
+                }
+            }, 250 )
+        })
+
+        //cierre automático haciendo clic fuera de .filter
+        document.addEventListener('click', (e) => {
+            const isClosest = e.target.closest(FtoShow);
+            if(!isClosest && Fpopup.classList.contains('show')) {
+                Fpopup.classList.remove('show')
+            }
+        })
+
+        //validar pedidos
+        function valida1(){
+            let xcorreo, xnombre, xapellidos, xempresa, xdireccion;
+            let xciudad, xprovincia, xpostal, xnumero;
+            xcorreo = document.getElementById("email").value;
+            xnombre = document.getElementById("fname").value;
+            xapellidos = document.getElementById("lname").value;
+            xempresa = document.getElementById("cname").value;
+            xdireccion = document.getElementById("adress").value;
+            xciudad = document.getElementById("city").value;
+            xprovincia = document.getElementById("state").value;
+            xpostal = document.getElementById("postal").value;
+            xnumero = document.getElementById("phone").value;
+            if(xcorreo=="" && xnombre=="" && xapellidos=="" && xempresa=="" && xdireccion=="" && xciudad=="" && xprovincia=="" && xpostal=="" && xnumero==""){
+                alert("Rellenar los datos por favor");
+            }else{
+                alert("Pedidos realizados con 'Exito'")
+            }
+        }
+    </script>
+</body>
+</html>
